@@ -1,0 +1,31 @@
+/*fonts importeren*/
+
+/*table of content
+1.global styles
+2. typography
+3. lay out
+   3.1 reusables=herbruikbaar
+   3.2 Other
+4. Areas:
+   4.1 header
+   4.2 xxx
+   4.3 xxxx
+   4.4 xxx
+5.media queries
+/////////////
+
+:root declareren {
+ --white: #ffffff;
+ }
+
+ * {
+ margin
+ padding
+ box-sizing
+ }
+
+ body {
+ font-family:
+ color:
+ }
+ */
