@@ -23,14 +23,14 @@
 
 
 
- /*-------------------- 1. Global styles ---------------------------*/
+/*-------------------- 1. Global styles ---------------------------*/
 
 
- * {
- margin: 0;
- padding: 0;
- box-sizing: border-box;
- }
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 
 :root {
     --purple-text-color: #5722CD;
@@ -44,16 +44,16 @@
 
 
 
- body {
-  font-family: "Roboto", sans-serif;
-  font-weight: 400;
-  color: var(--normal-text-color);
- }
+body {
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    color: var(--normal-text-color);
+}
 
 /*-------------------- 2. Typography ---------------------------*/
 h1, h2, h3, h4, h5, h6 {
- font-family: "Merriweather", serif;
- font-weight: 400;
+    font-family: "Merriweather", serif;
+    font-weight: 400;
 }
 
 
