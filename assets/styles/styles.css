@@ -1,31 +1,152 @@
-/*fonts importeren*/
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,400;0,700;0,900;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,400;0,700;0,900;1,700&family=Roboto:wght@300;400;500;700&display=swap');
 
-/*table of content
+
+/* Table of content
 1.global styles
 2. typography
 3. lay out
-   3.1 reusables=herbruikbaar
+   3.1 reusables
    3.2 Other
 4. Areas:
    4.1 header
-   4.2 xxx
-   4.3 xxxx
-   4.4 xxx
-5.media queries
-/////////////
+   4.2 introductie
+   4.3 Projects
+   4.4 Services
+   4.5 Form
+   4.6 Footer
+5 mediaqueries
+ */
 
-:root declareren {
- --white: #ffffff;
- }
+
+/*///////////////////////////////////////////////////////////////////////////////*/
+
+
+
+ /*-------------------- 1. Global styles ---------------------------*/
+
 
  * {
- margin
- padding
- box-sizing
+ margin: 0;
+ padding: 0;
+ box-sizing: border-box;
  }
 
+:root {
+    --purple-text-color: #5722CD;
+    --head-foot-color: #4B49E8;
+    --button-color: #ED4384;
+    --normal-text-color: #0C0C0C;
+    --whiteish-text-color: #F2F0FF;
+    --projects-background: #F3F6F9;
+    --tile-p-color: #7A7A7A;
+}
+
+
+
  body {
- font-family:
- color:
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  color: var(--normal-text-color);
  }
- */
+
+/*-------------------- 2. Typography ---------------------------*/
+h1, h2, h3, h4, h5, h6 {
+ font-family: "Merriweather", serif;
+ font-weight: 400;
+}
+
+
+/*-------------------- 3. Lay out ------------------------*/
+
+/*------------------- 3.1  Reusables  -------------*/
+.outer-container {
+    display: flex;
+    flex-direction: row;
+    justify-content:center;
+
+}
+
+
+.inner-container {
+    flex-basis:1200px;
+    display: flex;
+    flex-direction: column;
+    align-items:center;
+    margin: 0 20px;
+    border:2px dotted blue;
+
+}
+
+/*------------------- 3.2  Other  ----------------*/
+
+
+/*-------------------- 4.0 Areas ---------------------------*/
+
+/*------------------- 4.1. Header ----------------*/
+.header-section {
+    background: var(--head-foot-color);
+    color: var(--whiteish-text-color);
+}
+
+/*.header-section {*/
+/*    background-color: var(--head-foot-color);*/
+/*    color: var(--whiteish-text-color);*/
+/*    height: 327px;*/
+/*}*/
+
+/*.header-navigation {*/
+/*    display: flex;*/
+/*    flex-direction: row;*/
+/*    width: 100%;*/
+/*    border:2px solid yellow;*/
+/*    justify-content: flex-end ;*/
+
+/*}*/
+
+/*.header-navigation ul{*/
+/*    list-style: none;*/
+/*    display: flex;*/
+/*    flex-direction: row;*/
+/*    border: 1px dotted black;*/
+/*    flex-basis: 400px;*/
+/*    justify-content: space-between;*/
+/*    padding: 25px 0 ;*/
+/*}*/
+
+/*.header-link:link {*/
+/*    color: var(--whiteish-text-color);*/
+/*}*/
+
+/*.header-content {*/
+/*    border: 2px dotted purple;*/
+
+}
+/*------------------- 4.2  Introduction  ------------*/
+
+/*------------------- 4.3  Projects  -------------*/
+.project-section{
+    background-color: var(--projects-background);
+}
+
+.article-part {
+    display: flex;
+    flex-direction: row;
+}
+/*------------------- 4.4  Services  -------------*/
+
+/*------------------- 4.3  Form  -------------*/
+.form-section {
+    background-color: var(--head-foot-color);
+}
+
+/*------------------- 4.4  footer  ----------------*/
+.footer-section {
+    background-color: var(--normal-text-color);
+
+}
+
+
+
+
+/*-------------------- Media queries---------------------------*/
