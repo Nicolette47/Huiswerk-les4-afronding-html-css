@@ -56,6 +56,9 @@ h1, h2, h3, h4, h5, h6 {
     font-weight: 400;
 }
 
+.header-content h1, p, button {
+    padding:20px 0 ;
+}
 
 /*-------------------- 3. Lay out ------------------------*/
 
@@ -89,37 +92,38 @@ h1, h2, h3, h4, h5, h6 {
     color: var(--whiteish-text-color);
 }
 
-/*.header-section {*/
-/*    background-color: var(--head-foot-color);*/
-/*    color: var(--whiteish-text-color);*/
-/*    height: 327px;*/
-/*}*/
 
-/*.header-navigation {*/
-/*    display: flex;*/
-/*    flex-direction: row;*/
-/*    width: 100%;*/
-/*    border:2px solid yellow;*/
-/*    justify-content: flex-end ;*/
+.header-navigation {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    border: 2px solid yellow;
+    justify-content: flex-end;
+}
 
-/*}*/
+.header-navigation ul {
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    flex-basis: 400px;
+    justify-content: space-between;
+    padding: 25px 0 ;
+}
 
-/*.header-navigation ul{*/
-/*    list-style: none;*/
-/*    display: flex;*/
-/*    flex-direction: row;*/
-/*    border: 1px dotted black;*/
-/*    flex-basis: 400px;*/
-/*    justify-content: space-between;*/
-/*    padding: 25px 0 ;*/
-/*}*/
+.header-link:link {
+    color: var(--whiteish-text-color);
+    text-decoration: none;
+}
 
-/*.header-link:link {*/
-/*    color: var(--whiteish-text-color);*/
-/*}*/
+.header-content {
+    border: 1px solid blue;
+    width: 40vw;
+    text-align: center;
+    padding: 30px 0 50px 0;
+}
 
-/*.header-content {*/
-/*    border: 2px dotted purple;*/
+.header-graphic {
+    border: 1px dotted red;
 
 }
 /*------------------- 4.2  Introduction  ------------*/
