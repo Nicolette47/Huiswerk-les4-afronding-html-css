@@ -57,16 +57,17 @@ img {
 /*-------------------- 2. Typography ---------------------------*/
 h1, h2, h3, h4, h5, h6 {
     font-family: "Merriweather", serif;
-    font-weight: 400;
+    /*font-weight: 400;*/
 }
 
-.header-content h1, p, button {
+.header-content h1, .header-content button {
     padding: 1.5em 0;
 }
 
 .header-content p {
     font-weight: 300;
     font-size: 20px;
+    padding: 1.5em 0;
 }
 /*-------------------- 3. Lay out ------------------------*/
 
@@ -123,7 +124,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .header-content {
-    width: 40vw;
+    width: 50vw;
     text-align: center;
     padding:0 0 4em 0;
 }
@@ -142,7 +143,19 @@ h1, h2, h3, h4, h5, h6 {
     height: 4em;
 }
 /*------------------- 4.2  Introduction  ------------*/
+.introduction-content {
+    width: 50vw;
+    text-align: center;
+}
 
+.introduction-content h2 {
+    color: var(--purple-text-color);
+    margin: 2.5em 0;
+}
+
+.introduction-content p {
+    margin-bottom: 3em;
+}
 /*------------------- 4.3  Projects  -------------*/
 .project-section{
     background-color: var(--projects-background);
