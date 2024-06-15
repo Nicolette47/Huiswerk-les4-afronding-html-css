@@ -161,9 +161,24 @@ h1, h2, h3, h4, h5, h6 {
     background-color: var(--projects-background);
 }
 
-.article-part {
+.article-container {
+    border: 2px solid yellow;
     display: flex;
     flex-direction: row;
+    justify-content:space-between;
+    /*align-items:gaat over hoogte*/
+}
+
+.article-text {
+    border: 2px solid darkgreen;
+    flex-basis: 20em ;
+    margin-left: 4em;
+}
+
+.article-imagewrapper {
+    border: 2px solid red;
+    flex-basis: 32em ;
+    margin-right: 4em;
 }
 /*------------------- 4.4  Services  -------------*/
 
