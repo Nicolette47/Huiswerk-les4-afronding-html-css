@@ -72,6 +72,15 @@ h1, h2, h3, h4, h5, h6 {
 
 .article-text h2 {
     padding: 3em 0;
+}
+
+.tile-container p {
+    color: var(--tile-p-color);
+}
+
+.tile-container h2 {
+    color: var(--purple-text-color);
+    padding: 1em 0;
 
 }
 
@@ -87,7 +96,7 @@ h1, h2, h3, h4, h5, h6 {
 
 
 .inner-container {
-    flex-basis:1200px;
+    flex-basis:1500px;
     display: flex;
     flex-direction: column;
     align-items:center;
@@ -186,7 +195,6 @@ h1, h2, h3, h4, h5, h6 {
 
 .article-imagewrapper {
     flex-basis: 32em ;
-    margin-right: 4em;
 }
 
 .article-seperationline {
@@ -207,11 +215,29 @@ h1, h2, h3, h4, h5, h6 {
 
 .spiegelbeeld {
     flex-direction: row-reverse;
-    margin: 4em;
+    margin: 5em 5em 5em 0;
 }
 
 /*------------------- 4.4  Services  -------------*/
+.inner-container__service-grid {
+    flex-basis:1380px;
+    display: flex;
+    flex-direction: row;
+    justify-content:space-evenly;
+    flex-wrap: wrap;
+    row-gap:3em;
+    margin: 8em 0;
+}
 
+.tile-container {
+    border:2px solid var(--purple-text-color);
+    flex-basis: 24em;
+    padding: 2em 2em;
+}
+
+.tile-container img {
+    width: 75px;
+}
 /*------------------- 4.3  Form  -------------*/
 .form-section {
     background-color: var(--head-foot-color);
