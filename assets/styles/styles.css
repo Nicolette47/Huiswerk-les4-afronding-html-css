@@ -76,10 +76,12 @@ h1, h2, h3, h4, h5, h6 {
 
 .tile-container p {
     color: var(--tile-p-color);
+    font-size:10px;
 }
 
 .tile-container h2 {
     color: var(--purple-text-color);
+    font-size:15px;
     padding: 1em 0;
 
 }
@@ -96,7 +98,7 @@ h1, h2, h3, h4, h5, h6 {
 
 
 .inner-container {
-    flex-basis:1500px;
+    flex-basis:1200px;
     display: flex;
     flex-direction: column;
     align-items:center;
@@ -220,7 +222,7 @@ h1, h2, h3, h4, h5, h6 {
 
 /*------------------- 4.4  Services  -------------*/
 .inner-container__service-grid {
-    flex-basis:1380px;
+    flex-basis:1000px;
     display: flex;
     flex-direction: row;
     justify-content:space-evenly;
@@ -231,7 +233,7 @@ h1, h2, h3, h4, h5, h6 {
 
 .tile-container {
     border:2px solid var(--purple-text-color);
-    flex-basis: 24em;
+    flex-basis: 17em;
     padding: 2em 2em;
 }
 
@@ -241,7 +243,11 @@ h1, h2, h3, h4, h5, h6 {
 /*------------------- 4.3  Form  -------------*/
 .form-section {
     background-color: var(--head-foot-color);
+    background: linear-gradient(to bottom right, var(--head-foot-color), var(--purple-text-color));
 }
+
+
+
 
 /*------------------- 4.4  footer  ----------------*/
 .footer-section {
