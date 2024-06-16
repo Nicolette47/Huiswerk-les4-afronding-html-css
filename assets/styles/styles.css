@@ -311,7 +311,13 @@ input:focus {
     background-color: var(--normal-text-color);
 }
 
+.inner-container__footer {
+    color: var(--whiteish-text-color);
+    align-items: center;
+}
 
-
+.inner-container__footer p {
+    padding: 1.5em 0 ;
+}
 
 /*-------------------- Media queries---------------------------*/
