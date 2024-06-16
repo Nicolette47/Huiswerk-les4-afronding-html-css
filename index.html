@@ -12,9 +12,9 @@
     <div class="inner-container">
         <nav class="header-navigation">
             <ul>
-                <li><a class="header-link" href="/">Case studies</a></li>
-                <li><a class="header-link" href="/">Services</a></li>
-                <li><a class="header-link" href="/">Contact Us</a></li>
+                <li><a class="header-link" href="#case-studies">Case studies</a></li>
+                <li><a class="header-link" href="#services">Services</a></li>
+                <li><a class="header-link" href="#contact-form">Contact Us</a></li>
             </ul>
         </nav>
         <div class="header-content">
@@ -47,7 +47,7 @@
     <!--    Desktop versie. Deze sectie heeft outer-container (flex, row) met background. De inner-container (flex column) heeft 3 articles. Elke article is een div (flex, row) met 2 flex-items. De items zijn een kolom text en een plaatje. Deze image zit wel in een wrapper zodat hij kan meebewegen. Het enige verschil tussen de articles is de positie van het plaatje dat met row-reverse kan worden geregeld -->
     <section class="outer-container project-section">
         <div class="inner-container">
-            <div class="article-container">
+            <div class="article-container" id="case-studies">
                 <div class="article-text">
                     <h2>Rolling Stone</h2>
                     <img class="article-seperationline" src="assets/images/squiggle_line.svg"
@@ -103,7 +103,7 @@
     <!--  Desktop: de inner-container is al een flexbox, maar kolomrichting. Deze flexbox gaat nu row richting worden. Elke tegel heeft zelfde layout, dus zelfde class. En alles met text-align te stylen-->
     <section class="outer-container">
         <div class="inner-container__service-grid">
-            <article class="tile-container">
+            <article class="tile-container" id="services">
                 <img src="assets/images/icon_web-design.svg" alt="icon"/>
                 <h2>Web Design</h2>
                 <p>Good web design is how companies stand out from their competitors. High quality web design leads to
@@ -156,7 +156,7 @@
 
     <!--    Desktop:voor formulier gebruik ik alleen de innercontainer (display column) die ik net als bij de tegels hierboven een variatie van maak. Dus geen extra div. Dan binnen form tag de titel en subtext, de input velden met labels en de button (button bijna zelfde als headerbutton qua vormgeving). De flex-basis is de hoogte van alles, dus met align-items de zaken positioneren-->
     <form onsubmit="javascript-voor-nodig" class="outer-container form-section">
-        <div class="inner-container__form-part">
+        <div class="inner-container__form-part" id="contact-form">
             <h2>Let's work together</h2>
             <p>Have a question? Need a quote? Let us know!</p>
             <div class="text-correction">

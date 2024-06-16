@@ -152,6 +152,10 @@ input::placeholder {
     text-decoration: none;
 }
 
+.header-link:visited {
+    color: var(--whiteish-text-color);
+}
+
 .header-content {
     width: 50vw;
     text-align: center;
