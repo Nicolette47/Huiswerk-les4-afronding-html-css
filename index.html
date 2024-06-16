@@ -35,8 +35,8 @@
         <div class="inner-container">
             <div class="introduction-content">
                 <h2>
-                    Rekupe is a digital agency in Los Angeles. <br><br>We use strategic UX, SEO optimization and
-                    beautiful visual designs to help your business grow. <br><br>We see every project as a fresh
+                    Rekupe is a digital agency in Los Angeles. <br/><br/>We use strategic UX, SEO optimization and
+                    beautiful visual designs to help your business grow. <br/><br/>We see every project as a fresh
                     opportunity, pushing ourselves to create new digital experiences.
                 </h2>
                 <p>Have a question? <a href="/">Click here</a> to contact us!</p>
@@ -154,9 +154,18 @@
         </div>
     </section>
 
-    <form class="outer-container form-section">
-        <div class="inner-container">>
-            lets work together
+<!--    Desktop:voor formulier gebruik ik alleen de innercontainer (display column) die ik net als bij de tegels hierboven een variatie van maak. Dus geen extra div. Dan binnen form tag de titel en subtext, de input velden met labels en de button (button bijna zelfde als headerbutton qua vormgeving). De flex-basis is de hoogte van alles, dus met align-items de zaken positioneren-->
+    <form onsubmit="javascript-voor-nodig" class="outer-container form-section">
+        <div class="inner-container__form-part">
+            <h2>let's work together</h2>
+            <p>Have a question? Need a quote? Let us know!</p>
+            <label for="full-name-field">Name</label>
+            <input type="text" id="full-name-field" placeholder="Name" name="name"/>
+            <label for="email-field">Email</label>
+            <input type="email" id="email-field" placeholder="Ëmail" name="emailaddress"/>
+            <label for="message-field">Message</label>
+            <textarea name="message" id="message-field" cols="30" rows="10"></textarea>
+            <button type="submit">Send</button>
         </div>
     </form>
 </main>
