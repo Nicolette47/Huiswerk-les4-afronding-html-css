@@ -164,12 +164,13 @@ input::placeholder {
 
 .header-content button {
     background-color:  var(--button-color);
+    border: none;
     border-radius: 50px;
     padding: 20px 25px;
     text-transform: uppercase;
     color: var(--whiteish-text-color);
     font-size: 10px;
-    /*box-shadow: ;*/
+    box-shadow: 2px 2px 9px rgba(87, 34, 205, 1), -2px -2px 9px rgba(87, 34, 205, 1);
 }
 
 .header-graphic {
@@ -198,12 +199,12 @@ input::placeholder {
     display: flex;
     flex-direction: row;
     justify-content:space-between;
-    /*align-items:gaat over hoogte*/
+    padding-top: 5em;
 }
 
 .article-text {
     flex-basis: 20em ;
-    margin-left: 4em;
+    margin: 0 2em;
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
@@ -212,7 +213,8 @@ input::placeholder {
 }
 
 .article-imagewrapper {
-    flex-basis: 32em ;
+    flex-basis: 40em ;
+    /*box-shadow: 0 8px 14px -4px rgba(0, 0, 0, 0.2);*/
 }
 
 .article-seperationline {
@@ -233,7 +235,6 @@ input::placeholder {
 
 .spiegelbeeld {
     flex-direction: row-reverse;
-    margin: 5em 5em 5em 0;
 }
 
 /*------------------- 4.4  Services  -------------*/
@@ -251,6 +252,7 @@ input::placeholder {
     border:2px solid var(--purple-text-color);
     flex-basis: 17em;
     padding: 2em 2em;
+    box-shadow: 0 8px 14px -4px rgba(0, 0, 0, 0.2);
 }
 
 .tile-container img {
@@ -281,11 +283,13 @@ input::placeholder {
 .form-button {
     background-color: var(--button-color);
     border-radius: 50px;
+    border: none;
     padding: 20px 60px;
     text-transform: uppercase;
     color: var(--whiteish-text-color);
     font-size: 10px;
     margin: 15px 0;
+    box-shadow: 2px 2px 9px rgba(87, 34, 205, 1), -2px -2px 9px rgba(87, 34, 205, 1);
 }
 
 
