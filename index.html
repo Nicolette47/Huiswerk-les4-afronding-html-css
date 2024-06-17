@@ -2,9 +2,191 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
+    <link rel="stylesheet" href="assets/styles/styles.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Rekupe digital agency</title>
 </head>
 <body>
+<!--desktopversie: header section with an 1) outer container (flex-row) with background color. And b) een inner-container (flex column) with a nav-item + text item and image-item. Hierdoor img al in het midden van inner container als ik flex-center kies. Verder niets te groeien, wel krimpen. Default instelling dus
+Mobiele versie: zodra mobiele versie komt, dan valt op dat het niet meer in het centrum staat. Lijkt links kleine marge van die 20px wel te zijn. Maar rechts is het veel groter. En inspectie geeft niets aan wat die ruimte is. Is niet de outer-cotainer. Geen idee. Leer het wel als ik uitwerkingen zie en de feedback. -->
 
+<header class="outer-container header-section">
+    <div class="inner-container">
+        <nav class="header-navigation">
+            <ul>
+                <li><a class="header-link" href="#case-studies">Case studies</a></li>
+                <li><a class="header-link" href="#services">Services</a></li>
+                <li><a class="header-link" href="#contact-form">Contact Us</a></li>
+            </ul>
+        </nav>
+        <div class="header-content">
+            <h1>Your website is an investment in the success of your business</h1>
+            <p>We are here to help you succeed.</p>
+            <button type="button">Let's work together</button>
+        </div>
+        <div class="header-graphic">
+            <img src="assets/images/squiggle_line_stripe.svg"
+                 alt="waving short small line with a stripe vertical"/>
+        </div>
+    </div>
+</header>
+
+<main>
+    <!--   Desktop versie: Introductie met a) outer container zonder background kleur. b) de inner-container krijgt 1 div (flex, column) waar de tekst in komt. Deze div zelfde breedte als de "header-content". Mag niet groeien, wel krimpen. En daarna invidueel de h2 en p stylen-->
+    <section class="outer-container">
+        <div class="inner-container">
+            <div class="introduction-content">
+                <h2>
+                    Rekupe is a digital agency in Los Angeles. <br/><br/>We use strategic UX, SEO optimization and
+                    beautiful visual designs to help your business grow. <br/><br/>We see every project as a fresh
+                    opportunity, pushing ourselves to create new digital experiences.
+                </h2>
+                <p>Have a question? <a href="#contact-form">Click here</a> to contact us!</p>
+            </div>
+        </div>
+    </section>
+
+    <!--    Desktop versie. Deze sectie heeft outer-container (flex, row) met background. De inner-container (flex column) heeft 3 articles. Elke article is een div (flex, row) met 2 flex-items. De items zijn een kolom text en een plaatje. Deze image zit wel in een wrapper zodat hij kan meebewegen. Het enige verschil tussen de articles is de positie van het plaatje dat met row-reverse kan worden geregeld. Onduidelijk wat de link is van "view project" niet gelukt om via de flex-box inner container te regelen dat de 3 artikelen mooie marges boven en onder hebben.
+
+    Responsive versie: in de overgang naar mobiel wordt de image-wrapper toch groter, ondanks dat flex-grow 0 is. Geen idee hoezo. En alles gaat ineens van het centrum af. Zal ook wel met instelling flex-box te maken hebben dat dan bij media-queries moet.  -->
+    <section class="outer-container project-section">
+        <div class="inner-container">
+            <div class="article-container" id="case-studies">
+                <div class="article-text">
+                    <h2>Rolling Stone</h2>
+                    <img class="article-seperationline" src="assets/images/squiggle_line.svg"
+                         alt="korte golvende lijn"/>
+                    <p>You know Rolling Stone. It’s the definitive voice in music, politics and culture. It’s a global
+                        icon.
+                    </p>
+                    <a class="article-link" href="/">View project</a>
+                </div>
+
+                <div class="article-imagewrapper">
+                    <img src="assets/images/work-image-01.jpeg" alt="bureau met computer aan en schrift"/>
+                </div>
+            </div>
+
+
+            <div class="article-container spiegelbeeld">
+                <div class="article-text">
+                    <h2>Variety</h2>
+                    <img class="article-seperationline" src="assets/images/squiggle_line.svg"
+                         alt="korte golvende lijn"/>
+                    <p>Variety is an industry leader for breaking entertainment news, reviews and box office results
+                        with archive of content
+                        dating back to 1905.
+                    </p>
+                    <a class="article-link" href="/">View project</a>
+                </div>
+
+                <div class="article-imagewrapper">
+                    <img src="assets/images/work-image-02.jpeg" alt="bureau met werkende computer en tijdschrift"/>
+                </div>
+            </div>
+
+            <div class="article-container">
+                <div class="article-text">
+                    <h2>Worth</h2>
+                    <img class="article-seperationline" src="assets/images/squiggle_line.svg"
+                         alt="korte golvende lijn"/>
+                    <p>A global media platform connecting a community that embraces worth beyond wealth.</p>
+                    <a class="article-link" href="/">View project</a>
+                </div>
+
+                <div class="article-imagewrapper">
+                    <img src="assets/images/work-image-03.jpeg" alt="bureau met computer aan en schrift"/>
+                </div>
+            </div>
+
+    </section>
+
+    <!-- Desktop: de inner-container is al een flexbox, maar kolomrichting. Deze flexbox gaat nu row richting worden. Elke tegel heeft zelfde layout, dus zelfde class. En alles met text-align te stylen -->
+
+    <section class="outer-container">
+        <div class="inner-container__service-grid">
+            <article class="tile-container" id="services">
+                <img src="assets/images/icon_web-design.svg" alt="icon"/>
+                <h2>Web Design</h2>
+                <p>Good web design is how companies stand out from their competitors. High quality web design leads to
+                    increased user conversion and engagement. Through a proven web design process, we help clients
+                    launch websites and products that improve on their bottom line</p>
+            </article>
+
+            <article class="tile-container">
+                <img src="assets/images/icon_web-development.svg" alt="icon"/>
+                <h2>Web Development</h2>
+                <p>Modern websites need to be responsive and fully functional at all sizes. We develop all of our sites
+                    with a mobile first approach and ensure that our code quality is clean, organized and performant.
+                    Already have a design but need it developed? We’re here to help!</p>
+            </article>
+
+            <article class="tile-container">
+                <img src="assets/images/icon_ux.svg" alt="icon"/>
+                <h2>User Experience</h2>
+                <p>In order to build successful products you have to understand the user. We create user personas,
+                    wireframes and prototypes to test with users. This allows us to gather feedback which helps to shape
+                    the product and can quickly eliminate potential risks – saving you time and money.</p>
+            </article>
+
+            <article class="tile-container">
+                <img src="assets/images/icon_graphic-design.svg" alt="icon"/>
+                <h2>Logo Design + Branding</h2>
+                <p>Nike, Apple, Coca-Cola, Starbucks. What do all of these brands have in common? Easily recognizable
+                    logos and brand identity. The best brands stand out from the crowd by having a clear and unique
+                    point of view. We will work with you to understand your vision and help create a unique brand
+                    identity and style guide for your company.</p>
+            </article>
+
+            <article class="tile-container">
+                <img src="assets/images/icon_seo.svg" alt="icon"/>
+                <h2>SEO</h2>
+                <p>Do you want your site to rank higher in search results? Google is constantly changing their
+                    algorithms for how they rank pages. Don’t worry about constantly playing catch-up. We will make sure
+                    your website it optimized, providing you the best opportunities for organic search exposure.</p>
+            </article>
+
+            <article class="tile-container">
+                <img src="assets/images/icon_copywriting.svg" alt="icon"/>
+                <h2>Copy Writing</h2>
+                <p>Brand messaging needs to be clear, direct and easy to understand to be effective. A unique tone of
+                    voice will help you stand out from the crowd and build brand loyalty. We work with you to establish
+                    your brand bible and ensure your messaging is focused and targeted.</p>
+            </article>
+        </div>
+    </section>
+
+    <!--    Desktop:voor formulier wilde ik alleen de innercontainer (display column) gebruiken, net zoals bij de tegels hierboven. Alleen label text bleef in midden staan. Bleek door die inner-container te zijn. Align-items/self, niets hielp. Dus toch nog een div gemaakt om zo de labels ook op flex-start niveau te krijgen.Verder styling normaal.
+    Mobiele versie: dat gaat nog niet goed. De velden moeten een flex-box worden. Flink gestoeid met box-form en dan flex-box maken maar niets lukte. Ga wel leren als ik de uitwerking ga zien. -->
+    <form onsubmit="javascript-voor-nodig" class="outer-container form-section">
+        <div class="inner-container__form-part" id="contact-form">
+            <h2>Let's work together</h2>
+            <p>Have a question? Need a quote? Let us know!</p>
+            <div class="text-correction">
+                <!--                <div class="box-form">-->
+                <label for="full-name-field">Name</label><br>
+                <input type="text" id="full-name-field" placeholder="Name" name="name"/>
+                <!--                </div>-->
+                <!--                <div class="box-form">-->
+                <label for="email-field">Email</label><br>
+                <input type="email" id="email-field" placeholder="Email" name="emailaddress"/>
+                <!--                </div>-->
+                <!--                <div class="box-form">-->
+                <label for="message-field">Message</label><br>
+                <textarea name="message" id="message-field" cols="100" rows="15" placeholder="Message"></textarea>
+                <!--                </div>-->
+                <!--            <div class ="box-form">-->
+                </div>
+                <button class="button-form" type="submit">Send</button>
+                <!--            </div>-->
+        </div>
+    </form>
+</main>
+
+<footer class="outer-container footer-section">
+    <div class="inner-container__footer">
+        <p>Business website opdracht © NOVI Hogeschool 2022</p>
+    </div>
+</footer>
 </body>
 </html>

@@ -1,0 +1,365 @@
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,400;0,700;0,900;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,500;0,700;0,900;1,900&display=swap');
+
+
+/* Table of content
+1.global styles
+2. typography
+3. lay out
+   3.1 reusables
+   3.2 Other
+4. Areas:
+   4.1 header
+   4.2 introductie
+   4.3 Projects
+   4.4 Services
+   4.5 Form
+   4.6 Footer
+5 mediaqueries
+ */
+
+
+/*///////////////////////////////////////////////////////////////////////////////*/
+
+
+
+/*-------------------- 1. Global styles ---------------------------*/
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --purple-text-color: #5722CD;
+    --head-foot-color: #4B49E8;
+    --button-color: #ED4384;
+    --normal-text-color: #0C0C0C;
+    --whiteish-text-color: #F2F0FF;
+    --projects-background: #F3F6F9;
+    --tile-p-color: #7A7A7A;
+}
+
+
+
+body {
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    color: var(--normal-text-color);
+}
+
+img {
+    width: 100%;
+}
+
+/*-------------------- 2. Typography ---------------------------*/
+h1, h2, h3, h4, h5, h6 {
+    font-family: "Merriweather", serif;
+}
+
+.header-content h1, .header-content button {
+    padding: 1.5em 0;
+}
+
+.header-content p {
+    font-weight: 300;
+    font-size: 20px;
+    padding: 1.5em 0;
+}
+
+.article-text h2 {
+    padding: 3em 0;
+}
+
+.tile-container p {
+    color: var(--tile-p-color);
+    font-size:10px;
+}
+
+.tile-container h2 {
+    color: var(--purple-text-color);
+    font-size:15px;
+    padding: 1em 0;
+}
+
+.inner-container__form-part p {
+    padding: 2.5em 0;
+    letter-spacing: 2px;
+    font-size: 19px;
+}
+
+.inner-container__form-part h2 {
+    font-size: 50px;
+    font-weight: 300;
+}
+
+input::placeholder {
+    color: var(--tile-p-color);
+}
+/*-------------------- 3. Lay out ------------------------*/
+
+/*------------------- 3.1  Reusables  -------------*/
+.outer-container {
+    display: flex;
+    flex-direction: row;
+    justify-content:center;
+
+}
+
+
+.inner-container {
+    flex-basis:1200px;
+    display: flex;
+    flex-direction: column;
+    align-items:center;
+    margin: 0 20px;
+}
+
+/*------------------- 3.2  Other  ----------------*/
+
+
+/*-------------------- 4.0 Areas ---------------------------*/
+
+/*------------------- 4.1. Header ----------------*/
+.header-section {
+    color: var(--whiteish-text-color);
+    background: linear-gradient(to bottom right, var(--head-foot-color), var(--purple-text-color));
+}
+
+
+.header-navigation {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    justify-content: flex-end;
+}
+
+.header-navigation ul {
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    flex-basis: 400px;
+    justify-content: space-between;
+    padding: 15px 0 ;
+}
+
+.header-link:link {
+    color: var(--whiteish-text-color);
+    text-decoration: none;
+}
+
+.header-link:visited {
+    color: var(--whiteish-text-color);
+}
+
+.header-content {
+    width: 50vw;
+    text-align: center;
+    padding:0 0 4em 0;
+}
+
+.header-content button {
+    background-color:  var(--button-color);
+    border: none;
+    border-radius: 50px;
+    padding: 20px 25px;
+    text-transform: uppercase;
+    color: var(--whiteish-text-color);
+    font-size: 10px;
+    box-shadow: 2px 2px 9px rgba(87, 34, 205, 1), -2px -2px 9px rgba(87, 34, 205, 1);
+}
+
+.header-graphic {
+    height: 4em;
+}
+/*------------------- 4.2  Introduction  ------------*/
+.introduction-content {
+    width: 50vw;
+    text-align: center;
+}
+
+.introduction-content h2 {
+    color: var(--purple-text-color);
+    margin: 2.5em 0;
+}
+
+.introduction-content p {
+    margin-bottom: 3em;
+}
+/*------------------- 4.3  Projects  -------------*/
+.project-section{
+    background-color: var(--projects-background);
+}
+
+.article-container {
+    display: flex;
+    flex-direction: row;
+    justify-content:space-between;
+    padding-top: 4em;
+    padding-bottom: 4em;
+}
+
+.article-text {
+    flex-basis: 20em ;
+    margin: 0 2em;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items:flex-start;
+    position: relative;
+}
+
+.article-imagewrapper {
+    flex-basis: 40em ;
+    margin: 0 2em;
+    box-shadow: 0 8px 14px -4px rgba(0, 0, 0, 0.2);
+}
+
+
+.article-seperationline {
+    position: absolute;
+    top: 8em;
+    width: 45px;
+}
+
+.article-link:link {
+    color: var(--purple-text-color);
+    text-decoration: none;
+    padding: 3em 0;
+    font-weight: 800;
+    text-align: left;
+    text-transform: uppercase;
+    font-size: 10px;
+}
+
+.spiegelbeeld {
+    flex-direction: row-reverse;
+}
+
+/*------------------- 4.4  Services  -------------*/
+.inner-container__service-grid {
+    flex-basis:1000px;
+    display: flex;
+    flex-direction: row;
+    justify-content:space-evenly;
+    flex-wrap: wrap;
+    row-gap:3em;
+    margin: 8em 0;
+}
+
+.tile-container {
+    border:2px solid var(--purple-text-color);
+    flex-basis: 17em;
+    padding: 2em 2em;
+    box-shadow: 0 8px 14px -4px rgba(0, 0, 0, 0.2);
+}
+
+.tile-container img {
+    width: 75px;
+}
+/*------------------- 4.3  Form  -------------*/
+.form-section {
+    color: var(--whiteish-text-color);
+    background: linear-gradient(to bottom right, var(--head-foot-color), var(--purple-text-color));
+}
+
+.inner-container__form-part {
+    flex-basis:1200px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 5em 0;
+}
+
+.text-correction {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+/*.box-form {*/
+/*    display: flex;*/
+/*    flex-direction: column;*/
+/*}*/
+
+.button-form {
+    background-color: var(--button-color);
+    border-radius: 50px;
+    border: none;
+    padding: 20px 60px;
+    text-transform: uppercase;
+    color: var(--whiteish-text-color);
+    font-size: 10px;
+    margin: 15px 0;
+    box-shadow: 2px 2px 9px rgba(87, 34, 205, 1), -2px -2px 9px rgba(87, 34, 205, 1);
+}
+
+
+textarea, input {
+    width: 56em;
+}
+
+input {
+    padding: 1em 0 1em 1em;
+    margin: 0 0 2.5em;
+}
+
+textarea {
+    padding: 2em 0 2em 1em;
+    margin: 0 0 1em 0 ;
+    outline: none;
+}
+
+input:focus {
+    border: none;
+    outline:none;
+}
+
+
+/*------------------- 4.4  footer  ----------------*/
+.footer-section {
+    background-color: var(--normal-text-color);
+}
+
+.inner-container__footer {
+    color: var(--whiteish-text-color);
+    align-items: center;
+}
+
+.inner-container__footer p {
+    padding: 1.5em 0 ;
+}
+
+/*-------------------- Media queries---------------------------*/
+@media screen and (max-width: 578px) {
+    .article-container {
+        flex-direction: column;
+        padding: 1em;
+    }
+
+    .article-imagewrapper {
+        flex-basis: auto;
+    }
+
+    .inner-container__form-part p {
+        padding: 2.5em 0;
+        letter-spacing: 2px;
+        font-size: 10px;
+    }
+
+    .inner-container__form-part h2 {
+        font-size: 30px;
+        font-weight: 300;
+    }
+
+}
+
+
+
+
+
+
+
+}
