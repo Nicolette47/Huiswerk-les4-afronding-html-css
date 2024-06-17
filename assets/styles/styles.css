@@ -115,8 +115,6 @@ input::placeholder {
     flex-direction: column;
     align-items:center;
     margin: 0 20px;
-    border:2px dotted blue;
-
 }
 
 /*------------------- 3.2  Other  ----------------*/
@@ -271,10 +269,8 @@ input::placeholder {
     flex-basis:1200px;
     display: flex;
     flex-direction: column;
-    /*justify-content:flex-start*/
     align-items: center;
     padding: 5em 0;
-    border:2px dotted blue;
 }
 
 .text-correction {
@@ -283,7 +279,12 @@ input::placeholder {
     align-items: flex-start;
 }
 
-.form-button {
+/*.box-form {*/
+/*    display: flex;*/
+/*    flex-direction: column;*/
+/*}*/
+
+.button-form {
     background-color: var(--button-color);
     border-radius: 50px;
     border: none;
@@ -332,3 +333,33 @@ input:focus {
 }
 
 /*-------------------- Media queries---------------------------*/
+@media screen and (max-width: 578px) {
+    .article-container {
+        flex-direction: column;
+        padding: 1em;
+    }
+
+    .article-imagewrapper {
+        flex-basis: auto;
+    }
+
+    .inner-container__form-part p {
+        padding: 2.5em 0;
+        letter-spacing: 2px;
+        font-size: 10px;
+    }
+
+    .inner-container__form-part h2 {
+        font-size: 30px;
+        font-weight: 300;
+    }
+
+}
+
+
+
+
+
+
+
+}

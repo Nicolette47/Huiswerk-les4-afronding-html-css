@@ -3,10 +3,12 @@
 <head>
     <meta charset="UTF-8">
     <link rel="stylesheet" href="assets/styles/styles.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Rekupe digital agency</title>
 </head>
 <body>
-<!--desktopversie: header section with an 1) outer container (flex-row) with background color. And b) een inner-container (flex column) with a nav-item + text item and image-item. Hierdoor img al in het midden van inner container als ik flex-center kies. Verder niets te groeien, wel krimpen. Default instelling dus-->
+<!--desktopversie: header section with an 1) outer container (flex-row) with background color. And b) een inner-container (flex column) with a nav-item + text item and image-item. Hierdoor img al in het midden van inner container als ik flex-center kies. Verder niets te groeien, wel krimpen. Default instelling dus
+Mobiele versie: zodra mobiele versie komt, dan valt op dat het niet meer in het centrum staat. Lijkt links kleine marge van die 20px wel te zijn. Maar rechts is het veel groter. En inspectie geeft niets aan wat die ruimte is. Is niet de outer-cotainer. Geen idee. Leer het wel als ik uitwerkingen zie en de feedback. -->
 
 <header class="outer-container header-section">
     <div class="inner-container">
@@ -44,7 +46,9 @@
         </div>
     </section>
 
-    <!--    Desktop versie. Deze sectie heeft outer-container (flex, row) met background. De inner-container (flex column) heeft 3 articles. Elke article is een div (flex, row) met 2 flex-items. De items zijn een kolom text en een plaatje. Deze image zit wel in een wrapper zodat hij kan meebewegen. Het enige verschil tussen de articles is de positie van het plaatje dat met row-reverse kan worden geregeld. Onduidelijk wat de link is van "view project" niet gelukt om via de flex-box inner container te regelen dat de 3 artikelen mooie marges boven en onder hebben-->
+    <!--    Desktop versie. Deze sectie heeft outer-container (flex, row) met background. De inner-container (flex column) heeft 3 articles. Elke article is een div (flex, row) met 2 flex-items. De items zijn een kolom text en een plaatje. Deze image zit wel in een wrapper zodat hij kan meebewegen. Het enige verschil tussen de articles is de positie van het plaatje dat met row-reverse kan worden geregeld. Onduidelijk wat de link is van "view project" niet gelukt om via de flex-box inner container te regelen dat de 3 artikelen mooie marges boven en onder hebben.
+
+    Responsive versie: in de overgang naar mobiel wordt de image-wrapper toch groter, ondanks dat flex-grow 0 is. Geen idee hoezo. En alles gaat ineens van het centrum af. Zal ook wel met instelling flex-box te maken hebben dat dan bij media-queries moet.  -->
     <section class="outer-container project-section">
         <div class="inner-container">
             <div class="article-container" id="case-studies">
@@ -152,23 +156,33 @@
         </div>
     </section>
 
-    <!--    Desktop:voor formulier wilde ik alleen de innercontainer (display column) gebruiken, net zoals bij de tegels hierboven. Alleen label text bleef in midden staan. Bleek door die inner-container te zijn. Align-items/self, niets hielp. Dus toch nog een div gemaakt om zo de labels ook op flex-start niveau te krijgen.Verder styling normaal. -->
+    <!--    Desktop:voor formulier wilde ik alleen de innercontainer (display column) gebruiken, net zoals bij de tegels hierboven. Alleen label text bleef in midden staan. Bleek door die inner-container te zijn. Align-items/self, niets hielp. Dus toch nog een div gemaakt om zo de labels ook op flex-start niveau te krijgen.Verder styling normaal.
+    Mobiele versie: dat gaat nog niet goed. De velden moeten een flex-box worden. Flink gestoeid met box-form en dan flex-box maar niets lukte. Ga wel leren als ik de uitwerking ga zien. -->
     <form onsubmit="javascript-voor-nodig" class="outer-container form-section">
         <div class="inner-container__form-part" id="contact-form">
             <h2>Let's work together</h2>
             <p>Have a question? Need a quote? Let us know!</p>
             <div class="text-correction">
-                <label for="full-name-field">Name</label>
+                <!--                <div class="box-form">-->
+                <label for="full-name-field">Name</label><br>
                 <input type="text" id="full-name-field" placeholder="Name" name="name"/>
-                <label for="email-field">Email</label>
+                <!--                </div>-->
+                <!--                <div class="box-form">-->
+                <label for="email-field">Email</label><br>
                 <input type="email" id="email-field" placeholder="Email" name="emailaddress"/>
-                <label for="message-field">Message</label>
+                <!--                </div>-->
+                <!--                <div class="box-form">-->
+                <label for="message-field">Message</label><br>
                 <textarea name="message" id="message-field" cols="100" rows="15" placeholder="Message"></textarea>
-            </div>
-            <button class="form-button" type="submit">Send</button>
+                <!--                </div>-->
+                <!--            <div class ="box-form">-->
+                </div>
+                <button class="button-form" type="submit">Send</button>
+                <!--            </div>-->
         </div>
     </form>
 </main>
+
 <footer class="outer-container footer-section">
     <div class="inner-container__footer">
         <p>Business website opdracht © NOVI Hogeschool 2022</p>
